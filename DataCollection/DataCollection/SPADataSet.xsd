@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SPADataSet" targetNamespace="http://tempuri.org/SPADataSet.xsd" xmlns:mstns="http://tempuri.org/SPADataSet.xsd" xmlns="http://tempuri.org/SPADataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SPADatabase" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SPADatabase (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SPADataCollection.Properties.Settings.GlobalReference.Default.SPADatabase" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="backupTableTableAdapter" GeneratorDataComponentClassName="backupTableTableAdapter" Name="backupTable" UserDataComponentName="backupTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SPADatabase (Settings)" DbObjectName="dbo.backupTable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[backupTable] WHERE (([Handle] = @Original_Handle) AND ((@IsNull_Y_Start = 1 AND [Y_Start] IS NULL) OR ([Y_Start] = @Original_Y_Start)) AND ((@IsNull_X_Start = 1 AND [X_Start] IS NULL) OR ([X_Start] = @Original_X_Start)) AND ((@IsNull_Y_Finish = 1 AND [Y_Finish] IS NULL) OR ([Y_Finish] = @Original_Y_Finish)) AND ((@IsNull_X_Finish = 1 AND [X_Finish] IS NULL) OR ([X_Finish] = @Original_X_Finish)) AND ((@IsNull_Water = 1 AND [Water] IS NULL) OR ([Water] = @Original_Water)) AND ((@IsNull_Sewer = 1 AND [Sewer] IS NULL) OR ([Sewer] = @Original_Sewer)) AND ((@IsNull_Drain = 1 AND [Drain] IS NULL) OR ([Drain] = @Original_Drain)) AND ((@IsNull_KerbBack = 1 AND [KerbBack] IS NULL) OR ([KerbBack] = @Original_KerbBack)) AND ((@IsNull_KerbInv = 1 AND [KerbInv] IS NULL) OR ([KerbInv] = @Original_KerbInv)) AND ((@IsNull_PropertyBoundary = 1 AND [PropertyBoundary] IS NULL) OR ([PropertyBoundary] = @Original_PropertyBoundary)) AND ((@IsNull_StageBoundary = 1 AND [StageBoundary] IS NULL) OR ([StageBoundary] = @Original_StageBoundary)) AND ((@IsNull_CulDeSac = 1 AND [CulDeSac] IS NULL) OR ([CulDeSac] = @Original_CulDeSac)) AND ((@IsNull_Tintersection = 1 AND [Tintersection] IS NULL) OR ([Tintersection] = @Original_Tintersection)) AND ((@IsNull_Hydrant = 1 AND [Hydrant] IS NULL) OR ([Hydrant] = @Original_Hydrant)) AND ((@IsNull_Park = 1 AND [Park] IS NULL) OR ([Park] = @Original_Park)) AND ((@IsNull_Pline = 1 AND [Pline] IS NULL) OR ([Pline] = @Original_Pline)) AND ((@IsNull_Rectangle = 1 AND [Rectangle] IS NULL) OR ([Rectangle] = @Original_Rectangle)) AND ((@IsNull_Mtext = 1 AND [Mtext] IS NULL) OR ([Mtext] = @Original_Mtext)) AND ((@IsNull_Line = 1 AND [Line] IS NULL) OR ([Line] = @Original_Line)) AND ((@IsNull_Arc = 1 AND [Arc] IS NULL) OR ([Arc] = @Original_Arc)) AND ((@IsNull_Circle = 1 AND [Circle] IS NULL) OR ([Circle] = @Original_Circle)) AND ((@IsNull_Elips = 1 AND [Elips] IS NULL) OR ([Elips] = @Original_Elips)) AND ((@IsNull_Hatch = 1 AND [Hatch] IS NULL) OR ([Hatch] = @Original_Hatch)) AND ((@IsNull_Angle = 1 AND [Angle] IS NULL) OR ([Angle] = @Original_Angle)) AND ((@IsNull_SPline = 1 AND [SPline] IS NULL) OR ([SPline] = @Original_SPline)) AND ((@IsNull_SPALayerColour = 1 AND [SPALayerColour] IS NULL) OR ([SPALayerColour] = @Original_SPALayerColour)) AND ((@IsNull_SPARadius = 1 AND [SPARadius] IS NULL) OR ([SPARadius] = @Original_SPARadius)) AND ((@IsNull_DrawingName = 1 AND [DrawingName] IS NULL) OR ([DrawingName] = @Original_DrawingName)) AND ((@IsNull_CusomeLineTypeName = 1 AND [CusomeLineTypeName] IS NULL) OR ([CusomeLineTypeName] = @Original_CusomeLineTypeName)) AND ((@IsNull_SPACenter = 1 AND [SPACenter] IS NULL) OR ([SPACenter] = @Original_SPACenter)) AND ((@IsNull_SPABlock = 1 AND [SPABlock] IS NULL) OR ([SPABlock] = @Original_SPABlock)) AND ((@IsNull_SPALayerName = 1 AND [SPALayerName] IS NULL) OR ([SPALayerName] = @Original_SPALayerName)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Water" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sewer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drain" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbBack" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbInv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PropertyBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StageBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CulDeSac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tintersection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hydrant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Park" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rectangle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mtext" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Arc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Circle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Elips" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hatch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Angle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerColour" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPARadius" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DrawingName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CusomeLineTypeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPACenter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPABlock" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[backupTable] ([Handle], [Y_Start], [X_Start], [Y_Finish], [X_Finish], [Water], [Sewer], [Drain], [KerbBack], [KerbInv], [PropertyBoundary], [StageBoundary], [CulDeSac], [Tintersection], [Hydrant], [Park], [Pline], [Rectangle], [Mtext], [Line], [Arc], [Circle], [Elips], [Hatch], [Angle], [SPline], [SPALayerColour], [SPARadius], [DrawingName], [CusomeLineTypeName], [SPACenter], [SPABlock], [SPALayerName]) VALUES (@Handle, @Y_Start, @X_Start, @Y_Finish, @X_Finish, @Water, @Sewer, @Drain, @KerbBack, @KerbInv, @PropertyBoundary, @StageBoundary, @CulDeSac, @Tintersection, @Hydrant, @Park, @Pline, @Rectangle, @Mtext, @Line, @Arc, @Circle, @Elips, @Hatch, @Angle, @SPline, @SPALayerColour, @SPARadius, @DrawingName, @CusomeLineTypeName, @SPACenter, @SPABlock, @SPALayerName);
+SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM backupTable WHERE (Handle = @Handle)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM dbo.backupTable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[backupTable] SET [Handle] = @Handle, [Y_Start] = @Y_Start, [X_Start] = @X_Start, [Y_Finish] = @Y_Finish, [X_Finish] = @X_Finish, [Water] = @Water, [Sewer] = @Sewer, [Drain] = @Drain, [KerbBack] = @KerbBack, [KerbInv] = @KerbInv, [PropertyBoundary] = @PropertyBoundary, [StageBoundary] = @StageBoundary, [CulDeSac] = @CulDeSac, [Tintersection] = @Tintersection, [Hydrant] = @Hydrant, [Park] = @Park, [Pline] = @Pline, [Rectangle] = @Rectangle, [Mtext] = @Mtext, [Line] = @Line, [Arc] = @Arc, [Circle] = @Circle, [Elips] = @Elips, [Hatch] = @Hatch, [Angle] = @Angle, [SPline] = @SPline, [SPALayerColour] = @SPALayerColour, [SPARadius] = @SPARadius, [DrawingName] = @DrawingName, [CusomeLineTypeName] = @CusomeLineTypeName, [SPACenter] = @SPACenter, [SPABlock] = @SPABlock, [SPALayerName] = @SPALayerName WHERE (([Handle] = @Original_Handle) AND ((@IsNull_Y_Start = 1 AND [Y_Start] IS NULL) OR ([Y_Start] = @Original_Y_Start)) AND ((@IsNull_X_Start = 1 AND [X_Start] IS NULL) OR ([X_Start] = @Original_X_Start)) AND ((@IsNull_Y_Finish = 1 AND [Y_Finish] IS NULL) OR ([Y_Finish] = @Original_Y_Finish)) AND ((@IsNull_X_Finish = 1 AND [X_Finish] IS NULL) OR ([X_Finish] = @Original_X_Finish)) AND ((@IsNull_Water = 1 AND [Water] IS NULL) OR ([Water] = @Original_Water)) AND ((@IsNull_Sewer = 1 AND [Sewer] IS NULL) OR ([Sewer] = @Original_Sewer)) AND ((@IsNull_Drain = 1 AND [Drain] IS NULL) OR ([Drain] = @Original_Drain)) AND ((@IsNull_KerbBack = 1 AND [KerbBack] IS NULL) OR ([KerbBack] = @Original_KerbBack)) AND ((@IsNull_KerbInv = 1 AND [KerbInv] IS NULL) OR ([KerbInv] = @Original_KerbInv)) AND ((@IsNull_PropertyBoundary = 1 AND [PropertyBoundary] IS NULL) OR ([PropertyBoundary] = @Original_PropertyBoundary)) AND ((@IsNull_StageBoundary = 1 AND [StageBoundary] IS NULL) OR ([StageBoundary] = @Original_StageBoundary)) AND ((@IsNull_CulDeSac = 1 AND [CulDeSac] IS NULL) OR ([CulDeSac] = @Original_CulDeSac)) AND ((@IsNull_Tintersection = 1 AND [Tintersection] IS NULL) OR ([Tintersection] = @Original_Tintersection)) AND ((@IsNull_Hydrant = 1 AND [Hydrant] IS NULL) OR ([Hydrant] = @Original_Hydrant)) AND ((@IsNull_Park = 1 AND [Park] IS NULL) OR ([Park] = @Original_Park)) AND ((@IsNull_Pline = 1 AND [Pline] IS NULL) OR ([Pline] = @Original_Pline)) AND ((@IsNull_Rectangle = 1 AND [Rectangle] IS NULL) OR ([Rectangle] = @Original_Rectangle)) AND ((@IsNull_Mtext = 1 AND [Mtext] IS NULL) OR ([Mtext] = @Original_Mtext)) AND ((@IsNull_Line = 1 AND [Line] IS NULL) OR ([Line] = @Original_Line)) AND ((@IsNull_Arc = 1 AND [Arc] IS NULL) OR ([Arc] = @Original_Arc)) AND ((@IsNull_Circle = 1 AND [Circle] IS NULL) OR ([Circle] = @Original_Circle)) AND ((@IsNull_Elips = 1 AND [Elips] IS NULL) OR ([Elips] = @Original_Elips)) AND ((@IsNull_Hatch = 1 AND [Hatch] IS NULL) OR ([Hatch] = @Original_Hatch)) AND ((@IsNull_Angle = 1 AND [Angle] IS NULL) OR ([Angle] = @Original_Angle)) AND ((@IsNull_SPline = 1 AND [SPline] IS NULL) OR ([SPline] = @Original_SPline)) AND ((@IsNull_SPALayerColour = 1 AND [SPALayerColour] IS NULL) OR ([SPALayerColour] = @Original_SPALayerColour)) AND ((@IsNull_SPARadius = 1 AND [SPARadius] IS NULL) OR ([SPARadius] = @Original_SPARadius)) AND ((@IsNull_DrawingName = 1 AND [DrawingName] IS NULL) OR ([DrawingName] = @Original_DrawingName)) AND ((@IsNull_CusomeLineTypeName = 1 AND [CusomeLineTypeName] IS NULL) OR ([CusomeLineTypeName] = @Original_CusomeLineTypeName)) AND ((@IsNull_SPACenter = 1 AND [SPACenter] IS NULL) OR ([SPACenter] = @Original_SPACenter)) AND ((@IsNull_SPABlock = 1 AND [SPABlock] IS NULL) OR ([SPABlock] = @Original_SPABlock)) AND ((@IsNull_SPALayerName = 1 AND [SPALayerName] IS NULL) OR ([SPALayerName] = @Original_SPALayerName)));
+SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM backupTable WHERE (Handle = @Handle)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Water" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sewer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drain" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbBack" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbInv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PropertyBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StageBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CulDeSac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tintersection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hydrant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Park" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rectangle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mtext" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Arc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Circle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Elips" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hatch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Angle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerColour" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPARadius" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DrawingName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CusomeLineTypeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPACenter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPABlock" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Handle" DataSetColumn="Handle" />
+              <Mapping SourceColumn="Y_Start" DataSetColumn="Y_Start" />
+              <Mapping SourceColumn="X_Start" DataSetColumn="X_Start" />
+              <Mapping SourceColumn="Y_Finish" DataSetColumn="Y_Finish" />
+              <Mapping SourceColumn="X_Finish" DataSetColumn="X_Finish" />
+              <Mapping SourceColumn="Water" DataSetColumn="Water" />
+              <Mapping SourceColumn="Sewer" DataSetColumn="Sewer" />
+              <Mapping SourceColumn="Drain" DataSetColumn="Drain" />
+              <Mapping SourceColumn="KerbBack" DataSetColumn="KerbBack" />
+              <Mapping SourceColumn="KerbInv" DataSetColumn="KerbInv" />
+              <Mapping SourceColumn="PropertyBoundary" DataSetColumn="PropertyBoundary" />
+              <Mapping SourceColumn="StageBoundary" DataSetColumn="StageBoundary" />
+              <Mapping SourceColumn="CulDeSac" DataSetColumn="CulDeSac" />
+              <Mapping SourceColumn="Tintersection" DataSetColumn="Tintersection" />
+              <Mapping SourceColumn="Hydrant" DataSetColumn="Hydrant" />
+              <Mapping SourceColumn="Park" DataSetColumn="Park" />
+              <Mapping SourceColumn="Pline" DataSetColumn="Pline" />
+              <Mapping SourceColumn="Rectangle" DataSetColumn="Rectangle" />
+              <Mapping SourceColumn="Mtext" DataSetColumn="Mtext" />
+              <Mapping SourceColumn="Line" DataSetColumn="Line" />
+              <Mapping SourceColumn="Arc" DataSetColumn="Arc" />
+              <Mapping SourceColumn="Circle" DataSetColumn="Circle" />
+              <Mapping SourceColumn="Elips" DataSetColumn="Elips" />
+              <Mapping SourceColumn="Hatch" DataSetColumn="Hatch" />
+              <Mapping SourceColumn="Angle" DataSetColumn="Angle" />
+              <Mapping SourceColumn="SPline" DataSetColumn="SPline" />
+              <Mapping SourceColumn="SPALayerColour" DataSetColumn="SPALayerColour" />
+              <Mapping SourceColumn="SPARadius" DataSetColumn="SPARadius" />
+              <Mapping SourceColumn="DrawingName" DataSetColumn="DrawingName" />
+              <Mapping SourceColumn="CusomeLineTypeName" DataSetColumn="CusomeLineTypeName" />
+              <Mapping SourceColumn="SPACenter" DataSetColumn="SPACenter" />
+              <Mapping SourceColumn="SPABlock" DataSetColumn="SPABlock" />
+              <Mapping SourceColumn="SPALayerName" DataSetColumn="SPALayerName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SPATableTableAdapter" GeneratorDataComponentClassName="SPATableTableAdapter" Name="SPATable" UserDataComponentName="SPATableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SPADatabase (Settings)" DbObjectName="dbo.SPATable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[SPATable] ([Handle], [LayerName], [DrawingName], [Shape], [xStart], [yStart], [xEnd], [yEnd], [Radius], [Colour], [BlockName]) VALUES (@Handle, @LayerName, @DrawingName, @Shape, @xStart, @yStart, @xEnd, @yEnd, @Radius, @Colour, @BlockName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Handle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LayerName" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="LayerName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DrawingName" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Shape" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="Shape" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@xStart" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="xStart" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@yStart" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="yStart" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@xEnd" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="xEnd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@yEnd" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="yEnd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Radius" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Radius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Colour" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="Colour" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BlockName" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="BlockName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Handle, LayerName, DrawingName, Shape, xStart, yStart, xEnd, yEnd, Radius, Colour, BlockName FROM dbo.SPATable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Handle" DataSetColumn="Handle" />
+              <Mapping SourceColumn="LayerName" DataSetColumn="LayerName" />
+              <Mapping SourceColumn="DrawingName" DataSetColumn="DrawingName" />
+              <Mapping SourceColumn="Shape" DataSetColumn="Shape" />
+              <Mapping SourceColumn="xStart" DataSetColumn="xStart" />
+              <Mapping SourceColumn="yStart" DataSetColumn="yStart" />
+              <Mapping SourceColumn="xEnd" DataSetColumn="xEnd" />
+              <Mapping SourceColumn="yEnd" DataSetColumn="yEnd" />
+              <Mapping SourceColumn="Radius" DataSetColumn="Radius" />
+              <Mapping SourceColumn="Colour" DataSetColumn="Colour" />
+              <Mapping SourceColumn="BlockName" DataSetColumn="BlockName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TableTableAdapter" GeneratorDataComponentClassName="TableTableAdapter" Name="Table" UserDataComponentName="TableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SPADatabase (Settings)" DbObjectName="dbo.[Table]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Table] WHERE (([Handle] = @Original_Handle) AND ((@IsNull_Y_Start = 1 AND [Y_Start] IS NULL) OR ([Y_Start] = @Original_Y_Start)) AND ((@IsNull_X_Start = 1 AND [X_Start] IS NULL) OR ([X_Start] = @Original_X_Start)) AND ((@IsNull_Y_Finish = 1 AND [Y_Finish] IS NULL) OR ([Y_Finish] = @Original_Y_Finish)) AND ((@IsNull_X_Finish = 1 AND [X_Finish] IS NULL) OR ([X_Finish] = @Original_X_Finish)) AND ((@IsNull_Water = 1 AND [Water] IS NULL) OR ([Water] = @Original_Water)) AND ((@IsNull_Sewer = 1 AND [Sewer] IS NULL) OR ([Sewer] = @Original_Sewer)) AND ((@IsNull_Drain = 1 AND [Drain] IS NULL) OR ([Drain] = @Original_Drain)) AND ((@IsNull_KerbBack = 1 AND [KerbBack] IS NULL) OR ([KerbBack] = @Original_KerbBack)) AND ((@IsNull_KerbInv = 1 AND [KerbInv] IS NULL) OR ([KerbInv] = @Original_KerbInv)) AND ((@IsNull_PropertyBoundary = 1 AND [PropertyBoundary] IS NULL) OR ([PropertyBoundary] = @Original_PropertyBoundary)) AND ((@IsNull_StageBoundary = 1 AND [StageBoundary] IS NULL) OR ([StageBoundary] = @Original_StageBoundary)) AND ((@IsNull_CulDeSac = 1 AND [CulDeSac] IS NULL) OR ([CulDeSac] = @Original_CulDeSac)) AND ((@IsNull_Tintersection = 1 AND [Tintersection] IS NULL) OR ([Tintersection] = @Original_Tintersection)) AND ((@IsNull_Hydrant = 1 AND [Hydrant] IS NULL) OR ([Hydrant] = @Original_Hydrant)) AND ((@IsNull_Park = 1 AND [Park] IS NULL) OR ([Park] = @Original_Park)) AND ((@IsNull_Pline = 1 AND [Pline] IS NULL) OR ([Pline] = @Original_Pline)) AND ((@IsNull_Rectangle = 1 AND [Rectangle] IS NULL) OR ([Rectangle] = @Original_Rectangle)) AND ((@IsNull_Mtext = 1 AND [Mtext] IS NULL) OR ([Mtext] = @Original_Mtext)) AND ((@IsNull_Line = 1 AND [Line] IS NULL) OR ([Line] = @Original_Line)) AND ((@IsNull_Arc = 1 AND [Arc] IS NULL) OR ([Arc] = @Original_Arc)) AND ((@IsNull_Circle = 1 AND [Circle] IS NULL) OR ([Circle] = @Original_Circle)) AND ((@IsNull_Elips = 1 AND [Elips] IS NULL) OR ([Elips] = @Original_Elips)) AND ((@IsNull_Hatch = 1 AND [Hatch] IS NULL) OR ([Hatch] = @Original_Hatch)) AND ((@IsNull_Angle = 1 AND [Angle] IS NULL) OR ([Angle] = @Original_Angle)) AND ((@IsNull_SPline = 1 AND [SPline] IS NULL) OR ([SPline] = @Original_SPline)) AND ((@IsNull_SPALayerColour = 1 AND [SPALayerColour] IS NULL) OR ([SPALayerColour] = @Original_SPALayerColour)) AND ((@IsNull_SPARadius = 1 AND [SPARadius] IS NULL) OR ([SPARadius] = @Original_SPARadius)) AND ((@IsNull_DrawingName = 1 AND [DrawingName] IS NULL) OR ([DrawingName] = @Original_DrawingName)) AND ((@IsNull_CusomeLineTypeName = 1 AND [CusomeLineTypeName] IS NULL) OR ([CusomeLineTypeName] = @Original_CusomeLineTypeName)) AND ((@IsNull_SPACenter = 1 AND [SPACenter] IS NULL) OR ([SPACenter] = @Original_SPACenter)) AND ((@IsNull_SPABlock = 1 AND [SPABlock] IS NULL) OR ([SPABlock] = @Original_SPABlock)) AND ((@IsNull_SPALayerName = 1 AND [SPALayerName] IS NULL) OR ([SPALayerName] = @Original_SPALayerName)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Water" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sewer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drain" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbBack" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbInv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PropertyBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StageBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CulDeSac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tintersection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hydrant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Park" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rectangle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mtext" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Arc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Circle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Elips" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hatch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Angle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerColour" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPARadius" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DrawingName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CusomeLineTypeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPACenter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPABlock" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Table] ([Handle], [Y_Start], [X_Start], [Y_Finish], [X_Finish], [Water], [Sewer], [Drain], [KerbBack], [KerbInv], [PropertyBoundary], [StageBoundary], [CulDeSac], [Tintersection], [Hydrant], [Park], [Pline], [Rectangle], [Mtext], [Line], [Arc], [Circle], [Elips], [Hatch], [Angle], [SPline], [SPALayerColour], [SPARadius], [DrawingName], [CusomeLineTypeName], [SPACenter], [SPABlock], [SPALayerName]) VALUES (@Handle, @Y_Start, @X_Start, @Y_Finish, @X_Finish, @Water, @Sewer, @Drain, @KerbBack, @KerbInv, @PropertyBoundary, @StageBoundary, @CulDeSac, @Tintersection, @Hydrant, @Park, @Pline, @Rectangle, @Mtext, @Line, @Arc, @Circle, @Elips, @Hatch, @Angle, @SPline, @SPALayerColour, @SPARadius, @DrawingName, @CusomeLineTypeName, @SPACenter, @SPABlock, @SPALayerName);
+SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM [Table] WHERE (Handle = @Handle)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM dbo.[Table]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Table] SET [Handle] = @Handle, [Y_Start] = @Y_Start, [X_Start] = @X_Start, [Y_Finish] = @Y_Finish, [X_Finish] = @X_Finish, [Water] = @Water, [Sewer] = @Sewer, [Drain] = @Drain, [KerbBack] = @KerbBack, [KerbInv] = @KerbInv, [PropertyBoundary] = @PropertyBoundary, [StageBoundary] = @StageBoundary, [CulDeSac] = @CulDeSac, [Tintersection] = @Tintersection, [Hydrant] = @Hydrant, [Park] = @Park, [Pline] = @Pline, [Rectangle] = @Rectangle, [Mtext] = @Mtext, [Line] = @Line, [Arc] = @Arc, [Circle] = @Circle, [Elips] = @Elips, [Hatch] = @Hatch, [Angle] = @Angle, [SPline] = @SPline, [SPALayerColour] = @SPALayerColour, [SPARadius] = @SPARadius, [DrawingName] = @DrawingName, [CusomeLineTypeName] = @CusomeLineTypeName, [SPACenter] = @SPACenter, [SPABlock] = @SPABlock, [SPALayerName] = @SPALayerName WHERE (([Handle] = @Original_Handle) AND ((@IsNull_Y_Start = 1 AND [Y_Start] IS NULL) OR ([Y_Start] = @Original_Y_Start)) AND ((@IsNull_X_Start = 1 AND [X_Start] IS NULL) OR ([X_Start] = @Original_X_Start)) AND ((@IsNull_Y_Finish = 1 AND [Y_Finish] IS NULL) OR ([Y_Finish] = @Original_Y_Finish)) AND ((@IsNull_X_Finish = 1 AND [X_Finish] IS NULL) OR ([X_Finish] = @Original_X_Finish)) AND ((@IsNull_Water = 1 AND [Water] IS NULL) OR ([Water] = @Original_Water)) AND ((@IsNull_Sewer = 1 AND [Sewer] IS NULL) OR ([Sewer] = @Original_Sewer)) AND ((@IsNull_Drain = 1 AND [Drain] IS NULL) OR ([Drain] = @Original_Drain)) AND ((@IsNull_KerbBack = 1 AND [KerbBack] IS NULL) OR ([KerbBack] = @Original_KerbBack)) AND ((@IsNull_KerbInv = 1 AND [KerbInv] IS NULL) OR ([KerbInv] = @Original_KerbInv)) AND ((@IsNull_PropertyBoundary = 1 AND [PropertyBoundary] IS NULL) OR ([PropertyBoundary] = @Original_PropertyBoundary)) AND ((@IsNull_StageBoundary = 1 AND [StageBoundary] IS NULL) OR ([StageBoundary] = @Original_StageBoundary)) AND ((@IsNull_CulDeSac = 1 AND [CulDeSac] IS NULL) OR ([CulDeSac] = @Original_CulDeSac)) AND ((@IsNull_Tintersection = 1 AND [Tintersection] IS NULL) OR ([Tintersection] = @Original_Tintersection)) AND ((@IsNull_Hydrant = 1 AND [Hydrant] IS NULL) OR ([Hydrant] = @Original_Hydrant)) AND ((@IsNull_Park = 1 AND [Park] IS NULL) OR ([Park] = @Original_Park)) AND ((@IsNull_Pline = 1 AND [Pline] IS NULL) OR ([Pline] = @Original_Pline)) AND ((@IsNull_Rectangle = 1 AND [Rectangle] IS NULL) OR ([Rectangle] = @Original_Rectangle)) AND ((@IsNull_Mtext = 1 AND [Mtext] IS NULL) OR ([Mtext] = @Original_Mtext)) AND ((@IsNull_Line = 1 AND [Line] IS NULL) OR ([Line] = @Original_Line)) AND ((@IsNull_Arc = 1 AND [Arc] IS NULL) OR ([Arc] = @Original_Arc)) AND ((@IsNull_Circle = 1 AND [Circle] IS NULL) OR ([Circle] = @Original_Circle)) AND ((@IsNull_Elips = 1 AND [Elips] IS NULL) OR ([Elips] = @Original_Elips)) AND ((@IsNull_Hatch = 1 AND [Hatch] IS NULL) OR ([Hatch] = @Original_Hatch)) AND ((@IsNull_Angle = 1 AND [Angle] IS NULL) OR ([Angle] = @Original_Angle)) AND ((@IsNull_SPline = 1 AND [SPline] IS NULL) OR ([SPline] = @Original_SPline)) AND ((@IsNull_SPALayerColour = 1 AND [SPALayerColour] IS NULL) OR ([SPALayerColour] = @Original_SPALayerColour)) AND ((@IsNull_SPARadius = 1 AND [SPARadius] IS NULL) OR ([SPARadius] = @Original_SPARadius)) AND ((@IsNull_DrawingName = 1 AND [DrawingName] IS NULL) OR ([DrawingName] = @Original_DrawingName)) AND ((@IsNull_CusomeLineTypeName = 1 AND [CusomeLineTypeName] IS NULL) OR ([CusomeLineTypeName] = @Original_CusomeLineTypeName)) AND ((@IsNull_SPACenter = 1 AND [SPACenter] IS NULL) OR ([SPACenter] = @Original_SPACenter)) AND ((@IsNull_SPABlock = 1 AND [SPABlock] IS NULL) OR ([SPABlock] = @Original_SPABlock)) AND ((@IsNull_SPALayerName = 1 AND [SPALayerName] IS NULL) OR ([SPALayerName] = @Original_SPALayerName)));
+SELECT Handle, Y_Start, X_Start, Y_Finish, X_Finish, Water, Sewer, Drain, KerbBack, KerbInv, PropertyBoundary, StageBoundary, CulDeSac, Tintersection, Hydrant, Park, Pline, Rectangle, Mtext, Line, Arc, Circle, Elips, Hatch, Angle, SPline, SPALayerColour, SPARadius, DrawingName, CusomeLineTypeName, SPACenter, SPABlock, SPALayerName FROM [Table] WHERE (Handle = @Handle)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Handle" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Handle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Start" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Start" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Start" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Y_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Y_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Y_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_X_Finish" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_X_Finish" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="X_Finish" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Water" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Water" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sewer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Sewer" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Sewer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Drain" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Drain" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Drain" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbBack" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbBack" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbBack" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KerbInv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_KerbInv" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="KerbInv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PropertyBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_PropertyBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="PropertyBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StageBoundary" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_StageBoundary" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="StageBoundary" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CulDeSac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_CulDeSac" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="CulDeSac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tintersection" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Tintersection" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Tintersection" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hydrant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Original_Hydrant" Precision="0" ProviderType="Binary" Scale="0" Size="0" SourceColumn="Hydrant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Park" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Park" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Park" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Pline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Pline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Rectangle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Rectangle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Rectangle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mtext" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mtext" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mtext" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Line" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Line" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Line" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Arc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Arc" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Arc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Circle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Circle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Circle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Elips" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Elips" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Elips" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Hatch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Hatch" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Hatch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Angle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Angle" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Angle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPline" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPline" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPline" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerColour" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerColour" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerColour" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPARadius" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPARadius" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPARadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DrawingName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DrawingName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DrawingName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CusomeLineTypeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CusomeLineTypeName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CusomeLineTypeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPACenter" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPACenter" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPACenter" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPABlock" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPABlock" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPABlock" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SPALayerName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_SPALayerName" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="SPALayerName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Handle" DataSetColumn="Handle" />
+              <Mapping SourceColumn="Y_Start" DataSetColumn="Y_Start" />
+              <Mapping SourceColumn="X_Start" DataSetColumn="X_Start" />
+              <Mapping SourceColumn="Y_Finish" DataSetColumn="Y_Finish" />
+              <Mapping SourceColumn="X_Finish" DataSetColumn="X_Finish" />
+              <Mapping SourceColumn="Water" DataSetColumn="Water" />
+              <Mapping SourceColumn="Sewer" DataSetColumn="Sewer" />
+              <Mapping SourceColumn="Drain" DataSetColumn="Drain" />
+              <Mapping SourceColumn="KerbBack" DataSetColumn="KerbBack" />
+              <Mapping SourceColumn="KerbInv" DataSetColumn="KerbInv" />
+              <Mapping SourceColumn="PropertyBoundary" DataSetColumn="PropertyBoundary" />
+              <Mapping SourceColumn="StageBoundary" DataSetColumn="StageBoundary" />
+              <Mapping SourceColumn="CulDeSac" DataSetColumn="CulDeSac" />
+              <Mapping SourceColumn="Tintersection" DataSetColumn="Tintersection" />
+              <Mapping SourceColumn="Hydrant" DataSetColumn="Hydrant" />
+              <Mapping SourceColumn="Park" DataSetColumn="Park" />
+              <Mapping SourceColumn="Pline" DataSetColumn="Pline" />
+              <Mapping SourceColumn="Rectangle" DataSetColumn="Rectangle" />
+              <Mapping SourceColumn="Mtext" DataSetColumn="Mtext" />
+              <Mapping SourceColumn="Line" DataSetColumn="Line" />
+              <Mapping SourceColumn="Arc" DataSetColumn="Arc" />
+              <Mapping SourceColumn="Circle" DataSetColumn="Circle" />
+              <Mapping SourceColumn="Elips" DataSetColumn="Elips" />
+              <Mapping SourceColumn="Hatch" DataSetColumn="Hatch" />
+              <Mapping SourceColumn="Angle" DataSetColumn="Angle" />
+              <Mapping SourceColumn="SPline" DataSetColumn="SPline" />
+              <Mapping SourceColumn="SPALayerColour" DataSetColumn="SPALayerColour" />
+              <Mapping SourceColumn="SPARadius" DataSetColumn="SPARadius" />
+              <Mapping SourceColumn="DrawingName" DataSetColumn="DrawingName" />
+              <Mapping SourceColumn="CusomeLineTypeName" DataSetColumn="CusomeLineTypeName" />
+              <Mapping SourceColumn="SPACenter" DataSetColumn="SPACenter" />
+              <Mapping SourceColumn="SPABlock" DataSetColumn="SPABlock" />
+              <Mapping SourceColumn="SPALayerName" DataSetColumn="SPALayerName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SPADataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SPADataSet" msprop:Generator_UserDSName="SPADataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="backupTable" msprop:Generator_TableClassName="backupTableDataTable" msprop:Generator_TableVarName="tablebackupTable" msprop:Generator_TablePropName="backupTable" msprop:Generator_RowDeletingName="backupTableRowDeleting" msprop:Generator_RowChangingName="backupTableRowChanging" msprop:Generator_RowEvHandlerName="backupTableRowChangeEventHandler" msprop:Generator_RowDeletedName="backupTableRowDeleted" msprop:Generator_UserTableName="backupTable" msprop:Generator_RowChangedName="backupTableRowChanged" msprop:Generator_RowEvArgName="backupTableRowChangeEvent" msprop:Generator_RowClassName="backupTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Handle" msprop:Generator_ColumnVarNameInTable="columnHandle" msprop:Generator_ColumnPropNameInRow="Handle" msprop:Generator_ColumnPropNameInTable="HandleColumn" msprop:Generator_UserColumnName="Handle" type="xs:double" />
+              <xs:element name="Y_Start" msprop:Generator_ColumnVarNameInTable="columnY_Start" msprop:Generator_ColumnPropNameInRow="Y_Start" msprop:Generator_ColumnPropNameInTable="Y_StartColumn" msprop:Generator_UserColumnName="Y_Start" type="xs:double" minOccurs="0" />
+              <xs:element name="X_Start" msprop:Generator_ColumnVarNameInTable="columnX_Start" msprop:Generator_ColumnPropNameInRow="X_Start" msprop:Generator_ColumnPropNameInTable="X_StartColumn" msprop:Generator_UserColumnName="X_Start" type="xs:double" minOccurs="0" />
+              <xs:element name="Y_Finish" msprop:Generator_ColumnVarNameInTable="columnY_Finish" msprop:Generator_ColumnPropNameInRow="Y_Finish" msprop:Generator_ColumnPropNameInTable="Y_FinishColumn" msprop:Generator_UserColumnName="Y_Finish" type="xs:double" minOccurs="0" />
+              <xs:element name="X_Finish" msprop:Generator_ColumnVarNameInTable="columnX_Finish" msprop:Generator_ColumnPropNameInRow="X_Finish" msprop:Generator_ColumnPropNameInTable="X_FinishColumn" msprop:Generator_UserColumnName="X_Finish" type="xs:double" minOccurs="0" />
+              <xs:element name="Water" msprop:Generator_ColumnVarNameInTable="columnWater" msprop:Generator_ColumnPropNameInRow="Water" msprop:Generator_ColumnPropNameInTable="WaterColumn" msprop:Generator_UserColumnName="Water" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Sewer" msprop:Generator_ColumnVarNameInTable="columnSewer" msprop:Generator_ColumnPropNameInRow="Sewer" msprop:Generator_ColumnPropNameInTable="SewerColumn" msprop:Generator_UserColumnName="Sewer" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Drain" msprop:Generator_ColumnVarNameInTable="columnDrain" msprop:Generator_ColumnPropNameInRow="Drain" msprop:Generator_ColumnPropNameInTable="DrainColumn" msprop:Generator_UserColumnName="Drain" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="KerbBack" msprop:Generator_ColumnVarNameInTable="columnKerbBack" msprop:Generator_ColumnPropNameInRow="KerbBack" msprop:Generator_ColumnPropNameInTable="KerbBackColumn" msprop:Generator_UserColumnName="KerbBack" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="KerbInv" msprop:Generator_ColumnVarNameInTable="columnKerbInv" msprop:Generator_ColumnPropNameInRow="KerbInv" msprop:Generator_ColumnPropNameInTable="KerbInvColumn" msprop:Generator_UserColumnName="KerbInv" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="PropertyBoundary" msprop:Generator_ColumnVarNameInTable="columnPropertyBoundary" msprop:Generator_ColumnPropNameInRow="PropertyBoundary" msprop:Generator_ColumnPropNameInTable="PropertyBoundaryColumn" msprop:Generator_UserColumnName="PropertyBoundary" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="StageBoundary" msprop:Generator_ColumnVarNameInTable="columnStageBoundary" msprop:Generator_ColumnPropNameInRow="StageBoundary" msprop:Generator_ColumnPropNameInTable="StageBoundaryColumn" msprop:Generator_UserColumnName="StageBoundary" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CulDeSac" msprop:Generator_ColumnVarNameInTable="columnCulDeSac" msprop:Generator_ColumnPropNameInRow="CulDeSac" msprop:Generator_ColumnPropNameInTable="CulDeSacColumn" msprop:Generator_UserColumnName="CulDeSac" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Tintersection" msprop:Generator_ColumnVarNameInTable="columnTintersection" msprop:Generator_ColumnPropNameInRow="Tintersection" msprop:Generator_ColumnPropNameInTable="TintersectionColumn" msprop:Generator_UserColumnName="Tintersection" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Hydrant" msprop:Generator_ColumnVarNameInTable="columnHydrant" msprop:Generator_ColumnPropNameInRow="Hydrant" msprop:Generator_ColumnPropNameInTable="HydrantColumn" msprop:Generator_UserColumnName="Hydrant" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Park" msprop:Generator_ColumnVarNameInTable="columnPark" msprop:Generator_ColumnPropNameInRow="Park" msprop:Generator_ColumnPropNameInTable="ParkColumn" msprop:Generator_UserColumnName="Park" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pline" msprop:Generator_ColumnVarNameInTable="columnPline" msprop:Generator_ColumnPropNameInRow="Pline" msprop:Generator_ColumnPropNameInTable="PlineColumn" msprop:Generator_UserColumnName="Pline" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle" msprop:Generator_ColumnVarNameInTable="columnRectangle" msprop:Generator_ColumnPropNameInRow="Rectangle" msprop:Generator_ColumnPropNameInTable="RectangleColumn" msprop:Generator_UserColumnName="Rectangle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mtext" msprop:Generator_ColumnVarNameInTable="columnMtext" msprop:Generator_ColumnPropNameInRow="Mtext" msprop:Generator_ColumnPropNameInTable="MtextColumn" msprop:Generator_UserColumnName="Mtext" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Line" msprop:Generator_ColumnVarNameInTable="columnLine" msprop:Generator_ColumnPropNameInRow="Line" msprop:Generator_ColumnPropNameInTable="LineColumn" msprop:Generator_UserColumnName="Line" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Arc" msprop:Generator_ColumnVarNameInTable="columnArc" msprop:Generator_ColumnPropNameInRow="Arc" msprop:Generator_ColumnPropNameInTable="ArcColumn" msprop:Generator_UserColumnName="Arc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Circle" msprop:Generator_ColumnVarNameInTable="columnCircle" msprop:Generator_ColumnPropNameInRow="Circle" msprop:Generator_ColumnPropNameInTable="CircleColumn" msprop:Generator_UserColumnName="Circle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Elips" msprop:Generator_ColumnVarNameInTable="columnElips" msprop:Generator_ColumnPropNameInRow="Elips" msprop:Generator_ColumnPropNameInTable="ElipsColumn" msprop:Generator_UserColumnName="Elips" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hatch" msprop:Generator_ColumnVarNameInTable="columnHatch" msprop:Generator_ColumnPropNameInRow="Hatch" msprop:Generator_ColumnPropNameInTable="HatchColumn" msprop:Generator_UserColumnName="Hatch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Angle" msprop:Generator_ColumnVarNameInTable="columnAngle" msprop:Generator_ColumnPropNameInRow="Angle" msprop:Generator_ColumnPropNameInTable="AngleColumn" msprop:Generator_UserColumnName="Angle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPline" msprop:Generator_ColumnVarNameInTable="columnSPline" msprop:Generator_ColumnPropNameInRow="SPline" msprop:Generator_ColumnPropNameInTable="SPlineColumn" msprop:Generator_UserColumnName="SPline" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPALayerColour" msprop:Generator_ColumnVarNameInTable="columnSPALayerColour" msprop:Generator_ColumnPropNameInRow="SPALayerColour" msprop:Generator_ColumnPropNameInTable="SPALayerColourColumn" msprop:Generator_UserColumnName="SPALayerColour" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPARadius" msprop:Generator_ColumnVarNameInTable="columnSPARadius" msprop:Generator_ColumnPropNameInRow="SPARadius" msprop:Generator_ColumnPropNameInTable="SPARadiusColumn" msprop:Generator_UserColumnName="SPARadius" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DrawingName" msprop:Generator_ColumnVarNameInTable="columnDrawingName" msprop:Generator_ColumnPropNameInRow="DrawingName" msprop:Generator_ColumnPropNameInTable="DrawingNameColumn" msprop:Generator_UserColumnName="DrawingName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CusomeLineTypeName" msprop:Generator_ColumnVarNameInTable="columnCusomeLineTypeName" msprop:Generator_ColumnPropNameInRow="CusomeLineTypeName" msprop:Generator_ColumnPropNameInTable="CusomeLineTypeNameColumn" msprop:Generator_UserColumnName="CusomeLineTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPACenter" msprop:Generator_ColumnVarNameInTable="columnSPACenter" msprop:Generator_ColumnPropNameInRow="SPACenter" msprop:Generator_ColumnPropNameInTable="SPACenterColumn" msprop:Generator_UserColumnName="SPACenter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPABlock" msprop:Generator_ColumnVarNameInTable="columnSPABlock" msprop:Generator_ColumnPropNameInRow="SPABlock" msprop:Generator_ColumnPropNameInTable="SPABlockColumn" msprop:Generator_UserColumnName="SPABlock" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPALayerName" msprop:Generator_ColumnVarNameInTable="columnSPALayerName" msprop:Generator_ColumnPropNameInRow="SPALayerName" msprop:Generator_ColumnPropNameInTable="SPALayerNameColumn" msprop:Generator_UserColumnName="SPALayerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPATable" msprop:Generator_TableClassName="SPATableDataTable" msprop:Generator_TableVarName="tableSPATable" msprop:Generator_TablePropName="SPATable" msprop:Generator_RowDeletingName="SPATableRowDeleting" msprop:Generator_RowChangingName="SPATableRowChanging" msprop:Generator_RowEvHandlerName="SPATableRowChangeEventHandler" msprop:Generator_RowDeletedName="SPATableRowDeleted" msprop:Generator_UserTableName="SPATable" msprop:Generator_RowChangedName="SPATableRowChanged" msprop:Generator_RowEvArgName="SPATableRowChangeEvent" msprop:Generator_RowClassName="SPATableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Handle" msprop:Generator_ColumnVarNameInTable="columnHandle" msprop:Generator_ColumnPropNameInRow="Handle" msprop:Generator_ColumnPropNameInTable="HandleColumn" msprop:Generator_UserColumnName="Handle" type="xs:int" />
+              <xs:element name="LayerName" msprop:Generator_ColumnVarNameInTable="columnLayerName" msprop:Generator_ColumnPropNameInRow="LayerName" msprop:Generator_ColumnPropNameInTable="LayerNameColumn" msprop:Generator_UserColumnName="LayerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DrawingName" msprop:Generator_ColumnVarNameInTable="columnDrawingName" msprop:Generator_ColumnPropNameInRow="DrawingName" msprop:Generator_ColumnPropNameInTable="DrawingNameColumn" msprop:Generator_UserColumnName="DrawingName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shape" msprop:Generator_ColumnVarNameInTable="columnShape" msprop:Generator_ColumnPropNameInRow="Shape" msprop:Generator_ColumnPropNameInTable="ShapeColumn" msprop:Generator_UserColumnName="Shape" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xStart" msprop:Generator_ColumnVarNameInTable="columnxStart" msprop:Generator_ColumnPropNameInRow="xStart" msprop:Generator_ColumnPropNameInTable="xStartColumn" msprop:Generator_UserColumnName="xStart" type="xs:double" minOccurs="0" />
+              <xs:element name="yStart" msprop:Generator_ColumnVarNameInTable="columnyStart" msprop:Generator_ColumnPropNameInRow="yStart" msprop:Generator_ColumnPropNameInTable="yStartColumn" msprop:Generator_UserColumnName="yStart" type="xs:double" minOccurs="0" />
+              <xs:element name="xEnd" msprop:Generator_ColumnVarNameInTable="columnxEnd" msprop:Generator_ColumnPropNameInRow="xEnd" msprop:Generator_ColumnPropNameInTable="xEndColumn" msprop:Generator_UserColumnName="xEnd" type="xs:double" minOccurs="0" />
+              <xs:element name="yEnd" msprop:Generator_ColumnVarNameInTable="columnyEnd" msprop:Generator_ColumnPropNameInRow="yEnd" msprop:Generator_ColumnPropNameInTable="yEndColumn" msprop:Generator_UserColumnName="yEnd" type="xs:double" minOccurs="0" />
+              <xs:element name="Radius" msprop:Generator_ColumnVarNameInTable="columnRadius" msprop:Generator_ColumnPropNameInRow="Radius" msprop:Generator_ColumnPropNameInTable="RadiusColumn" msprop:Generator_UserColumnName="Radius" type="xs:double" minOccurs="0" />
+              <xs:element name="Colour" msprop:Generator_ColumnVarNameInTable="columnColour" msprop:Generator_ColumnPropNameInRow="Colour" msprop:Generator_ColumnPropNameInTable="ColourColumn" msprop:Generator_UserColumnName="Colour" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BlockName" msprop:Generator_ColumnVarNameInTable="columnBlockName" msprop:Generator_ColumnPropNameInRow="BlockName" msprop:Generator_ColumnPropNameInTable="BlockNameColumn" msprop:Generator_UserColumnName="BlockName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable" msprop:Generator_TableVarName="tableTable" msprop:Generator_TablePropName="Table" msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_RowChangingName="TableRowChanging" msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler" msprop:Generator_RowDeletedName="TableRowDeleted" msprop:Generator_UserTableName="Table" msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_RowEvArgName="TableRowChangeEvent" msprop:Generator_RowClassName="TableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Handle" msprop:Generator_ColumnVarNameInTable="columnHandle" msprop:Generator_ColumnPropNameInRow="Handle" msprop:Generator_ColumnPropNameInTable="HandleColumn" msprop:Generator_UserColumnName="Handle" type="xs:double" />
+              <xs:element name="Y_Start" msprop:Generator_ColumnVarNameInTable="columnY_Start" msprop:Generator_ColumnPropNameInRow="Y_Start" msprop:Generator_ColumnPropNameInTable="Y_StartColumn" msprop:Generator_UserColumnName="Y_Start" type="xs:double" minOccurs="0" />
+              <xs:element name="X_Start" msprop:Generator_ColumnVarNameInTable="columnX_Start" msprop:Generator_ColumnPropNameInRow="X_Start" msprop:Generator_ColumnPropNameInTable="X_StartColumn" msprop:Generator_UserColumnName="X_Start" type="xs:double" minOccurs="0" />
+              <xs:element name="Y_Finish" msprop:Generator_ColumnVarNameInTable="columnY_Finish" msprop:Generator_ColumnPropNameInRow="Y_Finish" msprop:Generator_ColumnPropNameInTable="Y_FinishColumn" msprop:Generator_UserColumnName="Y_Finish" type="xs:double" minOccurs="0" />
+              <xs:element name="X_Finish" msprop:Generator_ColumnVarNameInTable="columnX_Finish" msprop:Generator_ColumnPropNameInRow="X_Finish" msprop:Generator_ColumnPropNameInTable="X_FinishColumn" msprop:Generator_UserColumnName="X_Finish" type="xs:double" minOccurs="0" />
+              <xs:element name="Water" msprop:Generator_ColumnVarNameInTable="columnWater" msprop:Generator_ColumnPropNameInRow="Water" msprop:Generator_ColumnPropNameInTable="WaterColumn" msprop:Generator_UserColumnName="Water" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Sewer" msprop:Generator_ColumnVarNameInTable="columnSewer" msprop:Generator_ColumnPropNameInRow="Sewer" msprop:Generator_ColumnPropNameInTable="SewerColumn" msprop:Generator_UserColumnName="Sewer" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Drain" msprop:Generator_ColumnVarNameInTable="columnDrain" msprop:Generator_ColumnPropNameInRow="Drain" msprop:Generator_ColumnPropNameInTable="DrainColumn" msprop:Generator_UserColumnName="Drain" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="KerbBack" msprop:Generator_ColumnVarNameInTable="columnKerbBack" msprop:Generator_ColumnPropNameInRow="KerbBack" msprop:Generator_ColumnPropNameInTable="KerbBackColumn" msprop:Generator_UserColumnName="KerbBack" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="KerbInv" msprop:Generator_ColumnVarNameInTable="columnKerbInv" msprop:Generator_ColumnPropNameInRow="KerbInv" msprop:Generator_ColumnPropNameInTable="KerbInvColumn" msprop:Generator_UserColumnName="KerbInv" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="PropertyBoundary" msprop:Generator_ColumnVarNameInTable="columnPropertyBoundary" msprop:Generator_ColumnPropNameInRow="PropertyBoundary" msprop:Generator_ColumnPropNameInTable="PropertyBoundaryColumn" msprop:Generator_UserColumnName="PropertyBoundary" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="StageBoundary" msprop:Generator_ColumnVarNameInTable="columnStageBoundary" msprop:Generator_ColumnPropNameInRow="StageBoundary" msprop:Generator_ColumnPropNameInTable="StageBoundaryColumn" msprop:Generator_UserColumnName="StageBoundary" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CulDeSac" msprop:Generator_ColumnVarNameInTable="columnCulDeSac" msprop:Generator_ColumnPropNameInRow="CulDeSac" msprop:Generator_ColumnPropNameInTable="CulDeSacColumn" msprop:Generator_UserColumnName="CulDeSac" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Tintersection" msprop:Generator_ColumnVarNameInTable="columnTintersection" msprop:Generator_ColumnPropNameInRow="Tintersection" msprop:Generator_ColumnPropNameInTable="TintersectionColumn" msprop:Generator_UserColumnName="Tintersection" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Hydrant" msprop:Generator_ColumnVarNameInTable="columnHydrant" msprop:Generator_ColumnPropNameInRow="Hydrant" msprop:Generator_ColumnPropNameInTable="HydrantColumn" msprop:Generator_UserColumnName="Hydrant" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Park" msprop:Generator_ColumnVarNameInTable="columnPark" msprop:Generator_ColumnPropNameInRow="Park" msprop:Generator_ColumnPropNameInTable="ParkColumn" msprop:Generator_UserColumnName="Park" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pline" msprop:Generator_ColumnVarNameInTable="columnPline" msprop:Generator_ColumnPropNameInRow="Pline" msprop:Generator_ColumnPropNameInTable="PlineColumn" msprop:Generator_UserColumnName="Pline" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle" msprop:Generator_ColumnVarNameInTable="columnRectangle" msprop:Generator_ColumnPropNameInRow="Rectangle" msprop:Generator_ColumnPropNameInTable="RectangleColumn" msprop:Generator_UserColumnName="Rectangle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mtext" msprop:Generator_ColumnVarNameInTable="columnMtext" msprop:Generator_ColumnPropNameInRow="Mtext" msprop:Generator_ColumnPropNameInTable="MtextColumn" msprop:Generator_UserColumnName="Mtext" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Line" msprop:Generator_ColumnVarNameInTable="columnLine" msprop:Generator_ColumnPropNameInRow="Line" msprop:Generator_ColumnPropNameInTable="LineColumn" msprop:Generator_UserColumnName="Line" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Arc" msprop:Generator_ColumnVarNameInTable="columnArc" msprop:Generator_ColumnPropNameInRow="Arc" msprop:Generator_ColumnPropNameInTable="ArcColumn" msprop:Generator_UserColumnName="Arc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Circle" msprop:Generator_ColumnVarNameInTable="columnCircle" msprop:Generator_ColumnPropNameInRow="Circle" msprop:Generator_ColumnPropNameInTable="CircleColumn" msprop:Generator_UserColumnName="Circle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Elips" msprop:Generator_ColumnVarNameInTable="columnElips" msprop:Generator_ColumnPropNameInRow="Elips" msprop:Generator_ColumnPropNameInTable="ElipsColumn" msprop:Generator_UserColumnName="Elips" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hatch" msprop:Generator_ColumnVarNameInTable="columnHatch" msprop:Generator_ColumnPropNameInRow="Hatch" msprop:Generator_ColumnPropNameInTable="HatchColumn" msprop:Generator_UserColumnName="Hatch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Angle" msprop:Generator_ColumnVarNameInTable="columnAngle" msprop:Generator_ColumnPropNameInRow="Angle" msprop:Generator_ColumnPropNameInTable="AngleColumn" msprop:Generator_UserColumnName="Angle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPline" msprop:Generator_ColumnVarNameInTable="columnSPline" msprop:Generator_ColumnPropNameInRow="SPline" msprop:Generator_ColumnPropNameInTable="SPlineColumn" msprop:Generator_UserColumnName="SPline" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPALayerColour" msprop:Generator_ColumnVarNameInTable="columnSPALayerColour" msprop:Generator_ColumnPropNameInRow="SPALayerColour" msprop:Generator_ColumnPropNameInTable="SPALayerColourColumn" msprop:Generator_UserColumnName="SPALayerColour" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPARadius" msprop:Generator_ColumnVarNameInTable="columnSPARadius" msprop:Generator_ColumnPropNameInRow="SPARadius" msprop:Generator_ColumnPropNameInTable="SPARadiusColumn" msprop:Generator_UserColumnName="SPARadius" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DrawingName" msprop:Generator_ColumnVarNameInTable="columnDrawingName" msprop:Generator_ColumnPropNameInRow="DrawingName" msprop:Generator_ColumnPropNameInTable="DrawingNameColumn" msprop:Generator_UserColumnName="DrawingName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CusomeLineTypeName" msprop:Generator_ColumnVarNameInTable="columnCusomeLineTypeName" msprop:Generator_ColumnPropNameInRow="CusomeLineTypeName" msprop:Generator_ColumnPropNameInTable="CusomeLineTypeNameColumn" msprop:Generator_UserColumnName="CusomeLineTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPACenter" msprop:Generator_ColumnVarNameInTable="columnSPACenter" msprop:Generator_ColumnPropNameInRow="SPACenter" msprop:Generator_ColumnPropNameInTable="SPACenterColumn" msprop:Generator_UserColumnName="SPACenter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPABlock" msprop:Generator_ColumnVarNameInTable="columnSPABlock" msprop:Generator_ColumnPropNameInRow="SPABlock" msprop:Generator_ColumnPropNameInTable="SPABlockColumn" msprop:Generator_UserColumnName="SPABlock" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPALayerName" msprop:Generator_ColumnVarNameInTable="columnSPALayerName" msprop:Generator_ColumnPropNameInRow="SPALayerName" msprop:Generator_ColumnPropNameInTable="SPALayerNameColumn" msprop:Generator_UserColumnName="SPALayerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:backupTable" />
+      <xs:field xpath="mstns:Handle" />
+    </xs:unique>
+    <xs:unique name="Table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Table" />
+      <xs:field xpath="mstns:Handle" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

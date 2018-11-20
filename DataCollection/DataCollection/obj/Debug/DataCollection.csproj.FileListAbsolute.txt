@@ -1,0 +1,17 @@
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\obj\Debug\DataCollection.csproj.CoreCompileInputs.cache
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\obj\Debug\SPADataCollection.dll
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\obj\Debug\SPADataCollection.pdb
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\bin\Debug\SPAData.mdf
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\bin\Debug\SPAData_log.ldf
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\bin\Debug\SPADataCollection.dll.config
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\bin\Debug\SPADataCollection.dll
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\bin\Debug\SPADataCollection.pdb
+C:\Users\EW\source\repos\DataCollection\DataCollection\bin\Debug\SPAData.mdf
+C:\Users\EW\source\repos\DataCollection\DataCollection\bin\Debug\SPAData_log.ldf
+C:\Users\EW\source\repos\DataCollection\DataCollection\bin\Debug\SPADataCollection.dll.config
+C:\Users\EW\source\repos\DataCollection\DataCollection\bin\Debug\SPADataCollection.dll
+C:\Users\EW\source\repos\DataCollection\DataCollection\bin\Debug\SPADataCollection.pdb
+C:\Users\EW\source\repos\DataCollection\DataCollection\obj\Debug\DataCollection.csprojAssemblyReference.cache
+C:\Users\EW\source\repos\DataCollection\DataCollection\obj\Debug\DataCollection.csproj.CoreCompileInputs.cache
+C:\Users\EW\source\repos\DataCollection\DataCollection\obj\Debug\SPADataCollection.dll
+C:\Users\EW\source\repos\DataCollection\DataCollection\obj\Debug\SPADataCollection.pdb

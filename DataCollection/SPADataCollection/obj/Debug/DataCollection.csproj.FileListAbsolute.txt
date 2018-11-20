@@ -1,0 +1,2 @@
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\obj\Debug\DataCollection.csprojAssemblyReference.cache
+C:\Users\EW\source\repos\SPADataCollection\SPADataCollection\obj\Debug\DataCollection.csproj.CoreCompileInputs.cache
